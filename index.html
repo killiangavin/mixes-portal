@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
+  <title>Killian Gavin</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    html, body { height: 100%; overflow: hidden; background: #ffffff; }
+    iframe { width: 100%; height: 100%; border: none; display: block; }
+  </style>
+</head>
+<body>
+  <iframe id="appFrame" src="" title="Killian Gavin"></iframe>
+  <script>
+    // Paste your actual Apps Script web app deployment URL here (ends in /exec)
+    var APP_URL = 'PASTE_YOUR_DEPLOYMENT_URL_HERE';
+
+    // Passes whatever's after ? on THIS page straight through to the app -
+    // so mixes.killiangavin.com?client=abc123 correctly loads that exact
+    // client's view inside the iframe, same for ?admin=yoursecret.
+    document.getElementById('appFrame').src = APP_URL + window.location.search;
+  </script>
+</body>
+</html>
